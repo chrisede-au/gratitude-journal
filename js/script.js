@@ -15,7 +15,7 @@ function createGratitudeEntries() {
   gratitudeEntries.forEach(entry => {
     // Create Column
     const cardCol = document.createElement("div");
-    cardCol.classList.add("col-sm-6", "col-lg-4", "mb-4");
+    cardCol.classList.add("card-col", "col-sm-6", "col-lg-4", "mb-4");
 
     // Create card inside Column
     const card = document.createElement("div");
@@ -36,13 +36,6 @@ function createGratitudeEntries() {
     const cardFooter = document.createElement("div");
     cardFooter.classList.add("card-footer", "text-body-secondary");
     cardFooter.textContent = entry[entry.length - 1]; // display date and time as card header
-
-
-
-
-
-
-
 
   gratitudeCards.appendChild(cardCol);
   cardCol.appendChild(card);
