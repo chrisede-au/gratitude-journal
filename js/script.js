@@ -37,7 +37,7 @@ function createGratitudeEntries() {
     cardFooter.classList.add("card-footer", "text-body-secondary");
     cardFooter.textContent = entry[entry.length - 1]; // display date and time as card header
 
-  gratitudeCards.appendChild(cardCol);
+  gratitudeCards.prepend(cardCol);
   cardCol.appendChild(card);
   // card.appendChild(cardHeader);
   card.appendChild(cardBody);
